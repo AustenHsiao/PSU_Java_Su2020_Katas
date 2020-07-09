@@ -56,7 +56,7 @@ public class Kata {
       decimal -= (int)(decimal / 50) * 50;
     }
 
-    if(decimal == 40){
+    if(decimal >= 40){
       numeral += "XL";
       decimal -= 40;
     }else if(decimal >= 10) {
@@ -66,9 +66,9 @@ public class Kata {
       decimal -= (int)(decimal / 10) * 10;
     }
 
-    if(decimal == 9){
+    if(decimal >= 9){
       numeral += "IX";
-      decimal -= decimal - 9;
+      decimal -= 9;
     } else if(decimal >= 5) {
       for (int i = 0; i < (int)(decimal / 5); i++) {
         numeral += "V";
@@ -76,7 +76,7 @@ public class Kata {
       decimal -= (decimal / 5) * 5;
     }
 
-    if(decimal == 4){
+    if(decimal >= 4){
       numeral += "IV";
     }else if (decimal >= 1) {
       for (int i = 0; i < decimal; i++) {
