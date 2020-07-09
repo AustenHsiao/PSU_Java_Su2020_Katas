@@ -26,7 +26,7 @@ public class Kata {
       decimal -= (int)(decimal / 1000) * 1000;
     }
 
-    if(decimal == 900){
+    if(decimal >= 900){
       numeral += "CM";
       decimal -= 900;
     }else if(decimal >= 500) {
@@ -36,7 +36,7 @@ public class Kata {
       decimal -= (int)(decimal / 500) * 500;
     }
 
-    if(decimal == 400){
+    if(decimal >= 400){
       numeral += "CD";
       decimal -= 400;
     } else if(decimal >= 100) {
@@ -46,7 +46,7 @@ public class Kata {
       decimal -= (int)(decimal / 100) * 100;
     }
 
-    if(decimal == 90){
+    if(decimal >= 90){
       numeral += "XC";
       decimal -= 90;
     }else if(decimal >= 50) {

@@ -63,6 +63,10 @@ public class KataTest
     assertThat(Kata.decToRoman(49), equalTo("XLIX"));
   }
 
+  @Test
+  public void TestOneThreeThousandFiftyNine() {
+    assertThat(Kata.decToRoman(1359), equalTo("MCCCLIX"));
+  }
 
 
 }
