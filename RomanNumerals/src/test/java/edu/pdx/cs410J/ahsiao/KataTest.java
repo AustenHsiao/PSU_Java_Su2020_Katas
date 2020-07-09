@@ -68,5 +68,14 @@ public class KataTest
     assertThat(Kata.decToRoman(1359), equalTo("MCCCLIX"));
   }
 
+  @Test
+  public void TestFourThousand() {
+    assertThat(Kata.decToRoman(4000), equalTo("Too large"));
+  }
+
+  @Test
+  public void TestTwoThousandOneHundredFourtyFour() {
+    assertThat(Kata.decToRoman(2144), equalTo("MMCXLIV"));
+  }
 
 }
